@@ -6,106 +6,176 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site_Salchichinha</title>
     <style>
-        .header {
-            /* width: 1200px; */
-            height: 100vh;
-            display: flex;
-        }
-        .bem_vindo {
-            font-size: 26px;
-        }
-        .petshop{
-            font-size: 52px;
-        }
-        .imagem1 {
-            width: 370px;
-            height: 192px;
-            float: right;
-            right: 0px;
-        }
-        body {
-            box-sizing: border-box;
-            width: 800px;
-            margin-top: 34px;
-            margin-left: 24px ;
-            margin-right: 24px;
-            margin-bottom: 10px;
-            background-color: #E8DAB2;
-        }
-        h1 {
-            font-size: 30px;
-        }
-        p {
-            font-size: 24px;
-        }
-        .imagem2{
-            width: 100%-15px;
-            height: 100%-15px;
-        }
-        main {
-            margin-left: 50%;
-            transform: translateX(-50%);
-            border: 1px solid black;
-            border-radius: 30px;
-            background-color: white;
-            width: 800px;
-        }
-        footer {
-            color: rgb(255, 255, 255);
-            background-color: black;
-            width: 100%;
-        }
+    body {
+      font-family: 'Raleway';
+      padding: 0;
+      padding-bottom: 50px;
+      margin: 0;
+    }
 
-    </style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      padding: 0;
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: rgb(14, 177, 210);
+    }
+
+    section {
+      box-sizing: border-box;
+      padding: 0 24px;
+    }
+
+    p {
+      line-height: 24px;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+    #header {
+      background-color: #E8DAB2;
+      height: 100vh;
+      padding: 0 24px;
+      position: relative;
+    }
+
+    #header .welcome-title {
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+    }
+
+    #header .imagem-header {
+      width: 369px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+    }
+
+    #header .title {
+      font-size: 52px;
+    }
+
+    #header .subtitle {
+      font-size: 26px;
+    }
+
+    #footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 50px;
+      padding: 16px;
+      background-color: #090909;
+      color: white;
+      box-sizing: border-box;
+    }
+
+    #footer h3 {
+      float: right;
+    }
+    #sobre {
+        background-color: rgba(232, 218, 177, 1);
+    }
+
+    #sobre .section-container {
+        background-color: white;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        box-shadow: 0px 0px 13px -5px #000000;
+    }
+
+    #sobre .section-container .youtube-player {
+      margin-top: 25px;
+      width: calc(100% - 30px);
+      margin-left: 15px;
+      height: 400px;
+      border: none;
+    }
+
+    #sobre .section-image {
+      width: calc(100% - 30px);
+      margin-left: 15px;
+      margin-bottom: 16px;
+    }
+
+    #sobre .side-image {
+      /* width: calc(100% + 120px);
+      margin-left: -60px; */
+      margin-bottom: 16px;
+    }
+
+    #sobre ul li {
+      margin-top: 10px;
+    }
+
+    #adote-um-cachorro {
+      background-color: rgba(114, 17, 33, 0.9);
+      color: white;
+    }
+
+    .section-container {
+      width: 100%;
+      max-width: 800px;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      padding-top: 34px;
+      padding-bottom: 62px;
+      padding-left: 24px;
+      padding-right: 24px;
+      box-sizing: border-box;
+    }
+  </style>
 
 </head>
 <body>
-    <div>
-        <header class="header">
-            <h3 class="bem_vindo">Bem Vindo!</h3>
-            <h2 class="petshop">PetShop Salchichinha</h2>
-            <img class="imagem1" src="salsichinha.png" alt="imagem salsichinha">
-        </header>
+  <header id="header">
+    <div class="welcome-title">
+      <h3 class="subtitle" style="font-style: italic;">Bem vindo!</h3>
+      <h1 class="title">PetShop Salchichinha</h1>
     </div>
-    <main>
-        <h1>Um serviço pro seu au-migo favorito</h1>
+    <img class="imagem-header" src="salsichinha.png" alt="">
+  </header>
+  <main id="main">
+    <section id="sobre">
+      <div class="section-container">
+        <h2>Um serviço pro seu au-migo favorito</h2>
         <p>Aqui seu Salsicha será bem cuidado</p>
-        <img src="hotdog2.jpeg" alt="imagem">
-        <p>Características do porque amar um Salchichinha</p>
+        <img class="section-image" src="hotdog2.jpeg">
+        <h4>Características do porque amar um Salchichinha</h4>
         <ul>
-            <li>Fofos</li>
-            <li>Expressivos</li>
-            <li>Rebaixados</li>
+          <li>Fofos</li>
+          <li>Expressivos</li>
+          <li>Rebaixados</li>
         </ul>
-        <p>Os Dachshunds são cachorros enérgicos e adoram 
-            gastar sua energia procurado novos alvos para c
-            açar ou se divertir com o seu tutor. Portanto, 
-            para que ele não acabe tendo sobrepeso por ficar 
-            muito tempo parado, é importante realizar atividades 
-            físicas com o pet.</p>
-        <p>Desde passeios ou até mesmo, se for possível, um espaço 
-            para que ele possa correr livremente sem riscos. 
-            Além disso, eles são animais que adoram a presença 
-            de pessoas e não costumam se dar muito bem com a solidão.</p>
-        <h1>Veja um vídeo dos nossos parceiros</h1>
-        <iframe class="imagem2" src="https://www.youtube.com/embed/IKMPWnRRV04" frameborder="0"></iframe>
-        <p>Quando a gente pensa em adoção animal, normalmente 
-            esse pensamento vem acompanhado de um sentimento 
-            de ajudar um animal, de tornar a sociedade melhor 
-            com menos um bicho na rua. Mas será que na realidade 
-            é assim? O que realmente se esconde por trás de uma 
-            adoção?</p>
-            <p>Por que as pessoas adotam? Que sentimento é esse 
-                que faz uma pessoa retirar um animal da rua e 
-                levar para casa? Eu poderia passar horas aqui 
-                escrevendo sobre isso, pois são muitos sentimentos 
-                que se misturam, mas o mais forte é também o mais 
-                simples, amor!</p>
-
-    </main>
-    <footer>
-        <p>Não compre, adotem cachorro no <font-color="#000099">Amigo não se compra.</p>
-    <footer>
-    
+        <p>Os Dachshunds são cachorros enérgicos e adoram gastar sua energia procurado novos alvos para caçar ou se
+          divertir com o seu tutor. Portanto, para que ele não acabe tendo sobrepeso por ficar muito tempo parado, é
+          importante realizar atividades físicas com o pet.</p>
+        <p>Desde passeios ou até mesmo, se for possível, um espaço para que ele possa correr livremente sem riscos. Além
+          disso, eles são animais que adoram a presença de pessoas e não costumam se dar muito bem com a solidão.</p>
+        <h2>Veja um vídeo dos nossos parceiros</h2>
+        <iframe class="youtube-player" src="https://www.youtube.com/embed/IKMPWnRRV04"></iframe>
+        <p>Quando a gente pensa em adoção animal, normalmente esse pensamento vem acompanhado de um sentimento de ajudar
+          um animal, de tornar a sociedade melhor com menos um bicho na rua. Mas será que na realidade é assim? O que
+          realmente se esconde por trás de uma adoção?</p>
+        <p>Por que as pessoas adotam? Que sentimento é esse que faz uma pessoa retirar um animal da rua e levar para
+          casa? Eu poderia passar horas aqui escrevendo sobre isso, pois são muitos sentimentos que se misturam, mas o
+          mais forte é também o mais simples, amor!</p>
+      </div>
+    </section>
+  </main>
+  <footer id="footer" class="footer-fixo">
+    <h3>Não compre, adote um cachorro no <a href="https://www.amigonaosecompra.com.br/">Amigo não se compra</a></h3>
+  </footer>
 </body>
 </html>
